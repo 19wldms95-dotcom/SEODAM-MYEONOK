@@ -44,10 +44,20 @@ p {
     letter-spacing: -1%;
 }
 
+main {
+    position: relative;
+    height: 480px;
+}
+
 .intro {
-    width: 1200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 480px;
     padding: 180px 0 60px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.7)
 }
 
 .intro .content .eyebrow {
