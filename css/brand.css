@@ -1,0 +1,47 @@
+@charset "utf-8";
+@import url(./common.css);
+
+main {
+    height: 1080px;
+}
+
+.intro {
+    width: 100%;
+    height: 1080px;
+    padding: 180px 0 60px;
+    margin: 0 auto;
+    background: url(../images/brand_img/Brand-Intro-Img.png) no-repeat center/cover;
+}
+
+.intro .content .eyebrow {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.intro .content-text {
+    color: #fff;
+    text-align: center;
+
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.intro .content-text .title {
+    margin-bottom: 24px;
+}
+
+.intro .content-text span {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+
+princuple-area {
+    width: 100%;
+    height: 1080px;
+    background: url(../images/brand_img/Brand-Princuple-Img01.png);
+}
