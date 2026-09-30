@@ -1,10 +1,6 @@
 @charset "utf-8";
 @import url(./common.css);
 
-main {
-    height: 1080px;
-}
-
 .intro {
     width: 100%;
     height: 1080px;
@@ -40,8 +36,13 @@ main {
 }
 
 
-princuple-area {
+.princuple-area {
     width: 100%;
     height: 1080px;
-    background: url(../images/brand_img/Brand-Princuple-Img01.png);
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/brand_img/Brand-Princuple-Img01.png) no-repeat center/cover;
+
+    padding: 100px 0;
+    color: #fff;
 }
