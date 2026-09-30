@@ -57,7 +57,7 @@ main {
     height: 730px;
     padding: 180px 0 60px;
     margin: 0 auto;
-    background: url() no-repeat center/cover;
+    background: url(../images/brand_img/Brand-Intro-Img.png) no-repeat center/cover;
 }
 
 .intro .content .eyebrow {
@@ -70,7 +70,6 @@ main {
 
     position: absolute;
     top: 50%;
-    left: 21.5%;
     transform: translateY(-50%);
 }
 
