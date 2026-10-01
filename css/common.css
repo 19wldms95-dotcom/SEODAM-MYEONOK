@@ -1,75 +1,273 @@
 @charset "utf-8";
+
 @import url(reset.css);
 @import url(header.css);
 @import url(footer.css);
 
-/* 기본(웹) 공통 CSS */
+
+/* =========================================
+   COMMON - PC
+========================================= */
+
 body {
     color: #282522;
 }
 
+
+/* 공통 inner */
 .inner {
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 
+
+/* =========================================
+   TYPOGRAPHY
+========================================= */
+
 h1 {
     font-family: "Noto Serif KR", serif;
+
     font-size: 48px;
     font-weight: 700;
-    letter-spacing: -2%;
+
+    letter-spacing: -0.96px;
     line-height: 62px;
 }
 
+
 h2 {
     font-family: "Noto Serif KR", serif;
+
     font-size: 40px;
     font-weight: 700;
-    letter-spacing: -2%;
+
+    letter-spacing: -0.8px;
     line-height: 52px;
 }
 
+
 h3 {
     font-family: "Noto Serif KR", serif;
+
     font-size: 32px;
     font-weight: 700;
-    letter-spacing: -2%;
+
+    letter-spacing: -0.64px;
     line-height: 42px;
 }
+
 
 p {
     font-size: 16px;
     font-weight: 400;
+
     line-height: 26px;
-    letter-spacing: -1%;
+    letter-spacing: -0.16px;
 }
+
+
+/* =========================================
+   MAIN
+========================================= */
 
 main {
     height: auto;
 }
 
+
+/* =========================================
+   INTRO
+========================================= */
+
 .intro {
     width: 100%;
     height: 730px;
+
     padding: 180px 0 60px;
+
     margin: 0 auto;
-    background: url(../images/brand_img/Brand-Intro-Img.png) no-repeat center/cover;
+
+    background:
+        url(../images/brand_img/Brand-Intro-Img.png) no-repeat center / cover;
 }
+
 
 .intro .content .eyebrow {
     color: #fff;
+
     margin-bottom: 10px;
 }
+
 
 .intro .content-text {
     color: #fff;
 
     position: absolute;
+
     top: 50%;
+
     transform: translateY(-50%);
 }
 
+
 .intro .content-text span {
+    display: block;
+
     font-size: 14px;
     font-weight: 600;
+
+    margin-bottom: 16px;
+}
+
+
+
+/* =========================================
+   COMMON - MOBILE 430px
+========================================= */
+
+@media screen and (max-width: 430px) {
+
+    /* -------------------------------------
+       BODY
+    ------------------------------------- */
+
+    body {
+        width: 100%;
+
+        overflow-x: hidden;
+    }
+
+
+    /* -------------------------------------
+       공통 INNER
+
+       430px
+       좌우 padding 20px
+       실제 콘텐츠 영역 390px
+    ------------------------------------- */
+
+    .inner {
+        width: 100%;
+        max-width: none;
+
+        padding-left: 20px;
+        padding-right: 20px;
+
+        box-sizing: border-box;
+
+        margin: 0 auto;
+    }
+
+
+    /* -------------------------------------
+       TYPOGRAPHY
+    ------------------------------------- */
+
+    h1 {
+        font-size: 28px;
+        line-height: 38px;
+
+        letter-spacing: -0.56px;
+    }
+
+
+    h2 {
+        font-size: 24px;
+        line-height: 34px;
+
+        letter-spacing: -0.48px;
+    }
+
+
+    h3 {
+        font-size: 20px;
+        line-height: 30px;
+
+        letter-spacing: -0.4px;
+    }
+
+
+    p {
+        font-size: 14px;
+        line-height: 22px;
+
+        letter-spacing: -0.14px;
+    }
+
+
+    /* -------------------------------------
+       MAIN
+    ------------------------------------- */
+
+    main {
+        width: 100%;
+        height: auto;
+    }
+
+
+    /* -------------------------------------
+       INTRO
+    ------------------------------------- */
+
+    .intro {
+        width: 100%;
+        height: 260px;
+
+        padding: 0;
+        margin: 0;
+
+        position: relative;
+
+        background:
+            url(../images/brand_img/Brand-Intro-Img.png) no-repeat center / cover;
+    }
+
+
+    .intro .inner {
+        height: 100%;
+
+        position: relative;
+    }
+
+
+    /* -------------------------------------
+       INTRO TEXT
+    ------------------------------------- */
+
+    .intro .content-text {
+        width: calc(100% - 40px);
+
+        position: absolute;
+
+        top: 60%;
+        left: 50%;
+
+        color: #fff;
+
+        text-align: center;
+
+        transform: translate(-50%, -50%);
+    }
+
+
+    .intro .content-text span {
+        display: block;
+
+        margin-bottom: 10px;
+
+        font-size: 12px;
+        font-weight: 600;
+
+        line-height: 18px;
+    }
+
+
+    .intro .content-text .title {
+        font-size: 28px;
+        line-height: 38px;
+
+        letter-spacing: -0.56px;
+    }
+
 }

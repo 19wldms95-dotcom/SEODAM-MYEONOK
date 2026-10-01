@@ -1,64 +1,71 @@
 @charset "utf-8";
+
 @import url(./common.css);
+
+
+/* ==================================================
+   INTRO
+================================================== */
 
 .intro {
     width: 100%;
     height: 1080px;
+
     padding: 180px 0 60px;
+
     margin: 0 auto;
-    background: url(../images/brand_img/Brand-Intro-Img.png) no-repeat center/cover;
+
+    background:
+        url(../images/brand_img/Brand-Intro-Img.png) no-repeat center / cover;
 }
+
 
 .intro .content .eyebrow {
     color: #fff;
+
     margin-bottom: 10px;
 }
 
+
 .intro .content-text {
     color: #fff;
+
     text-align: center;
 
     position: absolute;
+
     top: 140px;
     left: 50%;
+
     transform: translateX(-50%);
 }
+
 
 .intro .content-text .title {
     margin-bottom: 24px;
 }
 
+
 .intro .content-text span {
     display: block;
+
     font-size: 14px;
     font-weight: 600;
+
     margin-bottom: 16px;
 }
 
 
+
+/* ==================================================
+   서담면옥 3가지 원칙
+================================================== */
+
 .princuple-area {
     width: 100%;
     height: 1080px;
-    background:
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url(../images/brand_img/Brand-Princuple-Img01.png) no-repeat center/cover;
 
     padding: 100px 0;
-    color: #fff;
-}
-
-.princuple-area h2 {
-    text-align: center;
-    margin-bottom: 70px;
-}
-
-/* =========================
-   서담면옥 3가지 원칙
-========================= */
-
-.princuple-area {
-    width: 100%;
-    height: 1080px;
 
     color: #fff;
 
@@ -68,11 +75,8 @@
 }
 
 
-/* =========================
-   배경 이미지
-========================= */
-
 /* 좋은 재료 */
+
 .princuple-area.princuple-bg01 {
     background:
         linear-gradient(rgba(0, 0, 0, 0.5),
@@ -82,6 +86,7 @@
 
 
 /* 정직한 면 */
+
 .princuple-area.princuple-bg02 {
     background:
         linear-gradient(rgba(0, 0, 0, 0.5),
@@ -91,6 +96,7 @@
 
 
 /* 깊은 육수 */
+
 .princuple-area.princuple-bg03 {
     background:
         linear-gradient(rgba(0, 0, 0, 0.5),
@@ -99,9 +105,10 @@
 }
 
 
-/* =========================
-   inner
-========================= */
+
+/* ==================================================
+   원칙 INNER
+================================================== */
 
 .princuple-area .inner {
     position: relative;
@@ -113,9 +120,10 @@
 }
 
 
-/* =========================
-   제목
-========================= */
+
+/* ==================================================
+   원칙 제목
+================================================== */
 
 .princuple-area h2 {
     padding-top: 100px;
@@ -127,13 +135,16 @@
 }
 
 
-/* =========================
+
+/* ==================================================
    카드 영역
-========================= */
+================================================== */
 
 .princuple-area .cards {
     display: flex;
+
     justify-content: center;
+
     gap: 198px;
 
     margin-top: 70px;
@@ -145,6 +156,7 @@
 
 .princuple-area .card {
     display: flex;
+
     justify-content: center;
     align-items: center;
 
@@ -165,10 +177,12 @@
 
 .princuple-area .card span {
     font-family: "Noto Serif KR", serif;
+
     writing-mode: vertical-rl;
     text-orientation: upright;
 
     font-size: 35px;
+
     letter-spacing: 12px;
 
     color: #fff;
@@ -189,16 +203,19 @@
 }
 
 
-/* =========================
-   하단 설명
-========================= */
+
+/* ==================================================
+   원칙 하단 설명
+================================================== */
 
 .princuple-desc {
     width: 400px;
+
     text-align: center;
 
     margin: 25px auto 0;
 }
+
 
 .princuple-desc h3 {
     margin-bottom: 14px;
@@ -207,17 +224,26 @@
     font-weight: 600;
 }
 
+
 .princuple-desc p {
     font-size: 16px;
+
     line-height: 1.7;
 }
 
-/* 전체 */
+
+
+/* ==================================================
+   BRAND STORY
+================================================== */
+
 .brand-story {
     width: 100%;
 }
 
+
 /* 공통 */
+
 .story-item {
     width: 100%;
     height: 810px;
@@ -227,15 +253,22 @@
     background-size: cover;
 }
 
+
 .story-item .inner {
     position: relative;
+
     width: 1440px;
     height: 100%;
+
     margin: 0 auto;
 }
 
 
-/* 좋은 면 */
+
+/* ==================================================
+   좋은 면
+================================================== */
+
 .story-noodle {
     background:
         linear-gradient(to right,
@@ -247,15 +280,22 @@
         url("../images/brand_img/Brand-Broth.png") no-repeat center / cover;
 }
 
+
 .story-noodle .story-text {
     position: absolute;
+
     left: 0;
     top: 50%;
+
     transform: translateY(-50%);
 }
 
 
-/* 깊은 육수 */
+
+/* ==================================================
+   깊은 육수
+================================================== */
+
 .story-broth {
     background:
         linear-gradient(to left,
@@ -267,106 +307,45 @@
         url("../images/brand_img/Brand-Noodle.png") no-repeat center / cover;
 }
 
+
 .story-broth .story-text {
     position: absolute;
+
     right: 0;
     top: 50%;
+
     transform: translateY(-50%);
 
     text-align: right;
 }
 
+
 .story-text {
     color: #fff;
 }
+
 
 .story-text h3 {
     margin-bottom: 24px;
 }
 
 
+
 /* ==================================================
    BRAND MOBILE
    기준 : 430px
+
+   HEADER 모바일 CSS는 넣지 않음.
+   header.css에서 공통 관리.
 ================================================== */
+
 @media screen and (max-width: 430px) {
 
-    /* =========================
-       공통
-    ========================= */
-    html,
-    body {
-        width: 100%;
-        overflow-x: hidden;
-    }
 
-    .inner {
-        width: 100%;
-        padding-left: 20px;
-        padding-right: 20px;
-        box-sizing: border-box;
-    }
-
-
-    /* =========================
-       HEADER
-    ========================= */
-    .header {
-        width: 100%;
-        height: 80px;
-        padding: 0;
-        background: #fff;
-        position: relative;
-    }
-
-    .header .inner {
-        width: 100%;
-        height: 80px;
-
-        padding: 0 20px;
-
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        gap: 0;
-    }
-
-    .header .inner .logo {
-        width: 65px;
-        height: auto;
-    }
-
-    .header .inner .logo img {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-
-    /* PC 메뉴 숨김 */
-    .header .gnb {
-        display: none;
-    }
-
-    /* 햄버거 아이콘 */
-    .header .inner::after {
-        content: "";
-
-        display: block;
-
-        width: 24px;
-        height: 18px;
-
-        background:
-            linear-gradient(#282522, #282522) 0 0 / 24px 2px no-repeat,
-            linear-gradient(#282522, #282522) 0 8px / 24px 2px no-repeat,
-            linear-gradient(#282522, #282522) 0 16px / 24px 2px no-repeat;
-    }
-
-
-    /* =========================
+    /* ==================================================
        INTRO
-    ========================= */
+    ================================================== */
+
     .intro {
         position: relative;
 
@@ -381,23 +360,30 @@
             url("../images/brand_img/Brand-Intro-Img.png") no-repeat center center / cover;
     }
 
+
     .intro .inner {
         width: 100%;
         height: 100%;
+
         padding: 0 20px;
+
+        box-sizing: border-box;
     }
+
 
     .intro .content-text {
         width: calc(100% - 40px);
 
         position: absolute;
-        top: 60px;
+
+        top: 130px;
         left: 50%;
 
         transform: translateX(-50%);
 
         text-align: center;
     }
+
 
     .intro .content-text span {
         display: block;
@@ -406,27 +392,36 @@
 
         font-size: 12px;
         line-height: 18px;
+
         letter-spacing: 0.5px;
     }
+
 
     .intro .content-text .title {
         margin-bottom: 12px;
 
         font-size: 28px;
+
         line-height: 1.35;
+
         letter-spacing: -1px;
     }
 
+
     .intro .content-text p {
         font-size: 13px;
+
         line-height: 1.7;
+
         letter-spacing: -0.3px;
     }
 
 
-    /* =========================
+
+    /* ==================================================
        서담면옥의 3가지 원칙
-    ========================= */
+    ================================================== */
+
     .princuple-area {
         width: 100%;
         height: 610px;
@@ -437,15 +432,20 @@
         background-size: cover;
     }
 
+
     .princuple-area .inner {
         width: 100%;
         height: 100%;
 
         padding: 0 20px;
+
+        box-sizing: border-box;
     }
+
 
     .princuple-area h2 {
         padding-top: 50px;
+
         margin: 0 0 32px;
 
         font-size: 24px;
@@ -454,15 +454,21 @@
     }
 
 
-    /* 카드 3개 */
+
+    /* ==================================================
+       원칙 카드 3개
+    ================================================== */
+
     .princuple-area .cards {
         display: flex;
+
         justify-content: center;
 
         gap: 16px;
 
         margin: 0 0 28px;
     }
+
 
     .princuple-area .card {
         width: 88px;
@@ -472,8 +478,10 @@
 
         box-sizing: border-box;
 
-        border: 1px solid rgba(255, 255, 255, 0.75);
+        border:
+            1px solid rgba(255, 255, 255, 0.75);
     }
+
 
     .princuple-area .card span {
         font-size: 22px;
@@ -483,15 +491,22 @@
         letter-spacing: 7px;
 
         writing-mode: vertical-rl;
+
         text-orientation: upright;
     }
 
+
     .princuple-area .card.active {
-        background: rgba(155, 137, 116, 0.45);
+        background:
+            rgba(155, 137, 116, 0.45);
     }
 
 
-    /* 원칙 설명 */
+
+    /* ==================================================
+       원칙 설명
+    ================================================== */
+
     .princuple-desc {
         width: 100%;
 
@@ -500,25 +515,32 @@
         text-align: center;
     }
 
+
     .princuple-desc h3 {
         margin-bottom: 8px;
 
         font-size: 17px;
+
         line-height: 1.5;
     }
 
+
     .princuple-desc p {
         font-size: 12px;
+
         line-height: 1.7;
     }
 
 
-    /* =========================
-       BRAND STORY 공통
-    ========================= */
+
+    /* ==================================================
+       BRAND STORY
+    ================================================== */
+
     .brand-story {
         width: 100%;
     }
+
 
     .story-item {
         width: 100%;
@@ -529,42 +551,43 @@
         background-size: cover;
     }
 
+
     .story-item .inner {
         width: 100%;
         height: 100%;
 
         padding: 0 20px;
 
+        box-sizing: border-box;
+
         position: relative;
     }
+
 
     .story-text h3 {
         margin-bottom: 8px;
 
         font-size: 22px;
+
         line-height: 1.45;
+
         letter-spacing: -0.8px;
     }
 
+
     .story-text p {
         font-size: 11px;
+
         line-height: 1.7;
+
         letter-spacing: -0.2px;
     }
 
 
-    /* =========================
+
+    /* ==================================================
        좋은 면
-    ========================= */
-
-    /*
-       현재 HTML/CSS를 확인하면
-       story-noodle에 Brand-Broth.png,
-       story-broth에 Brand-Noodle.png가 들어가 있어서
-       이미지가 서로 뒤바뀌어 있음.
-
-       모바일 시안에 맞게 여기에서 정상 이미지로 잡음.
-    */
+    ================================================== */
 
     .story-noodle {
         background:
@@ -574,6 +597,7 @@
                 rgba(0, 0, 0, 0) 55%),
             url("../images/brand_img/Brand-Noodle.png") no-repeat center / cover;
     }
+
 
     .story-noodle .story-text {
         width: calc(100% - 40px);
@@ -590,9 +614,11 @@
     }
 
 
-    /* =========================
+
+    /* ==================================================
        깊은 육수
-    ========================= */
+    ================================================== */
+
     .story-broth {
         background:
             linear-gradient(to top,
@@ -601,6 +627,7 @@
                 rgba(0, 0, 0, 0) 58%),
             url("../images/brand_img/Brand-Broth.png") no-repeat center / cover;
     }
+
 
     .story-broth .story-text {
         width: calc(100% - 40px);
@@ -616,70 +643,4 @@
         text-align: right;
     }
 
-
-    /* =========================
-       FOOTER
-    ========================= */
-    .footer {
-        width: 100%;
-        height: auto;
-
-        padding: 38px 20px 42px;
-
-        box-sizing: border-box;
-    }
-
-    .footer .inner {
-        width: 100%;
-
-        padding: 0;
-    }
-
-    footer .inner .logo {
-        width: 70px;
-        height: auto;
-
-        margin-bottom: 14px;
-    }
-
-    footer .inner .logo img {
-        width: 100%;
-        height: auto;
-
-        display: block;
-    }
-
-    footer .inner .info {
-        width: 100%;
-    }
-
-    footer .inner .info .info-top {
-        display: flex;
-        flex-wrap: wrap;
-
-        gap: 0 12px;
-    }
-
-    footer .inner .info p,
-    footer .inner .info a {
-        font-size: 11px;
-        line-height: 20px;
-    }
-
-    footer .inner .info .info-bottom {
-        margin-bottom: 10px;
-    }
-
-    footer .inner .info .info-link {
-        display: flex;
-
-        gap: 20px;
-
-        margin-bottom: 12px;
-    }
-
-    footer .inner .info .copyright {
-        font-size: 10px;
-        line-height: 18px;
-    }
 }
