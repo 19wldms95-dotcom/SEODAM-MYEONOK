@@ -82,14 +82,41 @@ main {
 
 .intro {
     width: 100%;
-    height: 730px;
+    height: 1080px;
 
     padding: 180px 0 60px;
 
     margin: 0 auto;
 
-    background:
-        url(../images/brand_img/Brand-Intro-Img.png) no-repeat center / cover;
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* INTRO VIDEO */
+.intro-video {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    object-fit: cover;
+
+    z-index: 0;
+}
+
+
+/* 영상 위에 콘텐츠가 올라오도록 */
+.intro .inner {
+    height: 100%;
+
+    position: relative;
+
+    z-index: 1;
 }
 
 
@@ -105,17 +132,22 @@ main {
 
     position: absolute;
 
-    top: 50%;
+    top: 75%;
 
     transform: translateY(-50%);
 }
 
+.intro .content-text h1 {
+    margin-bottom: 24px;
+}
 
 .intro .content-text span {
     display: block;
 
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 200;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
 
     margin-bottom: 16px;
 }
@@ -137,6 +169,7 @@ main {
 
         overflow-x: hidden;
     }
+
 
     .inner {
         width: 100%;
@@ -203,15 +236,30 @@ main {
 
     .intro {
         width: 100%;
-        height: 260px;
+        height: 810px;
 
         padding: 0;
         margin: 0;
 
         position: relative;
 
-        background:
-            url(../images/brand_img/Brand-Intro-Img.png) no-repeat center / cover;
+        overflow: hidden;
+    }
+
+
+    /* 모바일에서도 같은 영상 사용 */
+    .intro-video {
+        width: 100%;
+        height: 100%;
+
+        position: absolute;
+
+        top: 0;
+        left: 0;
+
+        object-fit: cover;
+
+        z-index: 0;
     }
 
 
@@ -219,6 +267,8 @@ main {
         height: 100%;
 
         position: relative;
+
+        z-index: 1;
     }
 
 
